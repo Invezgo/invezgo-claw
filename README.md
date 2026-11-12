@@ -26,7 +26,7 @@ or export `INVEZGO_API_KEY` in the Gateway environment.
 | `invezgo_get` | Call any read-only endpoint, e.g. `path: "/analysis/summary/stock/BBCA"`, `query: { from, to, investor: "all", market: "RG" }`. |
 | `invezgo_write` | *Optional — allowlist it to enable.* POST/PUT/PATCH/DELETE: run the screener, manage watchlists, journals, trades, alerts and screener presets. |
 
-Only paths documented in the Invezgo OpenAPI spec are called, always on `https://api.invezgo.com`.
+Only paths documented in the Invezgo OpenAPI spec are called, always on `https://api.invezgo.com`. Every result is labelled as untrusted external data (community posts and news are third-party text), and `invezgo_write` refuses to run unless the user confirmed the exact change.
 
 Example prompts: *"Siapa broker yang paling banyak akumulasi BBCA minggu ini?"*, *"Show TLKM's last 4 quarterly income statements"*, *"Screen syariah stocks where close > prev and volume > 1M"*.
 

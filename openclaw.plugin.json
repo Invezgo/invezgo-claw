@@ -2,7 +2,7 @@
   "id": "invezgo",
   "name": "Invezgo",
   "description": "Indonesia Stock Exchange (IDX/BEI) market data from the Invezgo API: stock lists, prices, charts, broker summaries, foreign flow, shareholders, financials, screener, news, plus your watchlists, portfolio and journal.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "configSchema": {
     "type": "object",
     "properties": {
