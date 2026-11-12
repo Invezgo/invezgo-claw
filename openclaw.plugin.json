@@ -1,0 +1,30 @@
+{
+  "id": "invezgo",
+  "name": "Invezgo",
+  "description": "Indonesia Stock Exchange (IDX/BEI) market data from the Invezgo API: stock lists, prices, charts, broker summaries, foreign flow, shareholders, financials, screener, news, plus your watchlists, portfolio and journal.",
+  "version": "0.1.0",
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "apiKey": {
+        "type": "string",
+        "description": "Invezgo API key from https://invezgo.com/id/setting/api. Falls back to the INVEZGO_API_KEY environment variable."
+      }
+    }
+  },
+  "activation": {
+    "onStartup": true
+  },
+  "contracts": {
+    "tools": [
+      "invezgo_endpoints",
+      "invezgo_get",
+      "invezgo_write"
+    ]
+  },
+  "toolMetadata": {
+    "invezgo_write": {
+      "optional": true
+    }
+  }
+}
