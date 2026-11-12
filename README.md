@@ -5,7 +5,7 @@ Give your OpenClaw agent the [Invezgo API](https://invezgo.com): Indonesia Stock
 ## Install
 
 ```bash
-openclaw plugins install @invezgo/openclaw-plugin-invezgo
+openclaw plugins install @invezgo/data-saham-indonesia
 ```
 
 ## Configure
