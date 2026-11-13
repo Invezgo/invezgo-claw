@@ -51,6 +51,7 @@ async function call(
     headers: {
       Authorization: `Bearer ${apiKey}`,
       Accept: "application/json",
+      "User-Agent": "Invezgo Claw",
       ...(body === undefined ? {} : { "Content-Type": "application/json" }),
     },
     body: body === undefined ? undefined : JSON.stringify(body),

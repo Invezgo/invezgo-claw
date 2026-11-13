@@ -2,7 +2,7 @@
 import { writeFileSync } from "node:fs";
 
 const SPEC_URL = process.argv[2] ?? "https://api.invezgo.com/openapi.json";
-const spec = await (await fetch(SPEC_URL)).json();
+const spec = await (await fetch(SPEC_URL, { headers: { "User-Agent": "Invezgo Claw" } })).json();
 
 const clip = (s, n) => {
   const t = (s ?? "").replace(/\s+/g, " ").trim();
